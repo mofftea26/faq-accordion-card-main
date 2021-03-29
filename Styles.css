@@ -1,0 +1,170 @@
+body{
+    background: linear-gradient(rgb(175, 103, 233),hsl(240, 73%, 65%));
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    min-height: 120vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    background-color: white;
+    margin-left: 15px;
+    margin-right: 15px;
+    border-radius: 16px;
+    padding: 30px;
+    padding-top: 0px;
+    padding-bottom: 50px;
+    max-width: 296px;
+}
+
+.pic{
+padding-top: 0px;
+display: flex;
+flex-direction: column;
+align-content: center;
+margin-left: 30px;
+}
+
+.bg-pic-mobile{
+    margin-top: -150px;
+    margin-left: 0px;
+    width: 80%;
+    height: auto;
+}
+
+.bg-mobile{
+    width: 70%;
+    height: auto;
+    margin-left: 25px;
+    
+
+}
+
+.faq{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0px;
+}
+
+.head{
+    font-weight: 700;
+    font-size: 30px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.accordion{
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    text-align: left;
+    padding: 0px;
+    cursor: pointer;
+    outline: none;
+    transition: 0.4s;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    border-bottom: 1px solid hsl(240, 5%, 91%);
+}
+.accordion:last-child{
+    margin-bottom: 20px;
+}
+.arrow{
+    float: right;
+}
+.active{
+    color: hsl(237, 12%, 33%);
+    font-weight: 700;
+}
+.activeb{
+    transform: scaleY(-1);
+}
+.panel{
+    display: none;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
+    font-size: 12px;
+}
+.bg-pt-desk{
+    display: none;
+}
+.bg-desk{
+    display: none;
+}
+.boximg{
+    display: none;
+}
+.attribution{
+    background: hsl(199, 44%, 55%);
+    width: 100%;
+    padding-top:2px;
+    padding-bottom: 2px;
+    position: fixed;
+    bottom: 0px;
+    
+}
+@media(min-width:1440px){
+
+.card{
+    flex-direction: row;
+    padding-right: 30px;
+    max-width: 960px;
+    width: 100%;
+    min-height: 540px;
+    padding-left: 0;
+    max-height: 540px;
+    padding-bottom: 0;
+    margin-bottom: 120px;
+}
+.pic{
+    justify-content: center;
+    overflow: hidden;
+    margin-left: 0;
+    width: 50%;
+}
+.bg-pt-desk{
+    display: flex;
+    margin-left: ;
+    width: 200%;
+    height:200%;
+    margin-top: -400px;
+    margin-left: -600px;
+   
+}
+.bg-desk{
+    display: flex;
+    margin-top: -650px;
+    margin-left: -80px;
+    width: 100%;
+    height: auto;
+    
+}
+.boximg{
+   display: inline;
+   
+   margin-left: -490px ;
+   position: absolute;
+}
+.bg-mobile{
+    display: none;
+}
+.bg-pic-mobile{
+    display: none;
+}
+.faq{
+    align-items: flex-start;
+    width: 50%;
+}
+}
