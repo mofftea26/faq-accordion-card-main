@@ -1,4 +1,4 @@
-let acc = document.querySelectorAll("#accordion");
+let acc = document.querySelectorAll(".accordion");
 let arrow = document.querySelectorAll(".arrow");
 
 for (let i = 0; i < acc.length; i++) {
